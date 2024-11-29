@@ -1,32 +1,35 @@
-  {
-    "expo": {
-      "name": "quiz-app",
-      "slug": "quiz-app",
-      "version": "1.0.0",
-      "orientation": "portrait",
-      "icon": "./assets/icon.png",
-      "userInterfaceStyle": "light",
-      "newArchEnabled": true,
-
-      "ios": {
-        "supportsTablet": true,
-        "bundleIdentifier": "com.anonymous.quiz-app"
+{
+  "expo": {
+    "name": "quiz-app",
+    "slug": "quiz-app",
+    "version": "1.0.0",
+    "scheme": "quiz-app-scheme",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.quiz-app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
       },
-      "android": {
-        "adaptiveIcon": {
-          "foregroundImage": "./assets/adaptive-icon.png",
-          "backgroundColor": "#ffffff"
-        },
-        "package": "com.anonymous.quizapp"
-      },
-      "web": {
-        "favicon": "./assets/favicon.png"
-      },
-      "splash": {
-        "image": "./assets/images/QA.png",
-        "resizeMode": "contain",
-        "backgroundColor": "#39B54A"
-      }
-    
-    }
+      "package": "com.anonymous.quizapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "splash": {
+      "image": "./assets/images/QA.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#39B54A"
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
+}
