@@ -1,28 +1,32 @@
-{
-  "expo": {
-    "name": "quiz-app",
-    "slug": "quiz-app",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+  {
+    "expo": {
+      "name": "quiz-app",
+      "slug": "quiz-app",
+      "version": "1.0.0",
+      "orientation": "portrait",
+      "icon": "./assets/icon.png",
+      "userInterfaceStyle": "light",
+      "newArchEnabled": true,
+
+      "ios": {
+        "supportsTablet": true,
+        "bundleIdentifier": "com.anonymous.quiz-app"
+      },
+      "android": {
+        "adaptiveIcon": {
+          "foregroundImage": "./assets/adaptive-icon.png",
+          "backgroundColor": "#ffffff"
+        },
+        "package": "com.anonymous.quizapp"
+      },
+      "web": {
+        "favicon": "./assets/favicon.png"
+      },
+      "splash": {
+        "image": "./assets/images/QA.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#39B54A"
       }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    
     }
   }
-}
