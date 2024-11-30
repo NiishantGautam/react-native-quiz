@@ -5,7 +5,7 @@ import { StatusBar, Animated, Text, Image, View, StyleSheet, Dimensions } from "
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { DATA } from "../../constant.ts";
-
+import LearningDashboard from "./LearningDashboard.tsx";
 // Screen dimensions
 const { width, height } = Dimensions.get("screen");
 
@@ -45,7 +45,7 @@ export default function Page() {
           <>
             <SignedIn>
               <View style={styles.centeredContainer}>
-                <Text>Hello {user?.emailAddresses?.[0]?.emailAddress ?? "User"}</Text>
+                <LearningDashboard user={user} />
               </View>
             </SignedIn>
 
