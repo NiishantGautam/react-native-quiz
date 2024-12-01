@@ -54,7 +54,9 @@ const LearningDashboard = ({ user }) => {
             <Image source={require("../../../assets/icon.png")} style={styles.avatar} />
             <View>
               <Text style={styles.greeting}>Happy learning,</Text>
-              <Text style={styles.username}>{user?.primaryEmailAddress?.emailAddress || 'User'}</Text>
+              <Text style={styles.username}>
+                {user?.primaryEmailAddress?.emailAddress || "User"}
+              </Text>
             </View>
           </View>
           <TouchableOpacity>
@@ -83,6 +85,7 @@ const LearningDashboard = ({ user }) => {
         <TouchableOpacity style={[styles.actionCard, styles.practiceCard]}>
           <View style={styles.cardContent}>
             <Text style={styles.cardIcon}>🎴</Text>
+
             <View>
               <Text style={styles.cardTitle}>Practice flashcards</Text>
               <Text style={styles.cardDescription}>
